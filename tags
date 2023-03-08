@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+INCLUDE_VERMAGIC	source/framework/model/test.mod.c	/^#define INCLUDE_VERMAGIC$/;"	d	language:C	file:
+MY_TIME_OPS_H	include/framework/time/time_ops.h	/^#define MY_TIME_OPS_H$/;"	d	language:C++
+cache_node_info	source/framework/model/rbtree_ops.c	/^struct cache_node_info {$/;"	s	language:C	file:
+deleteRBTreeNode	source/framework/model/rbtree_ops.c	/^static void deleteRBTreeNode(struct rb_root* root,int key)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,int key)
+displayCurrentTimeByYMDS	source/framework/time/time_ops.c	/^void displayCurrentTimeByYMDS(void)$/;"	f	language:C	typeref:typename:void	signature:(void)
+displayRBTree	source/framework/model/rbtree_ops.c	/^static void displayRBTree(struct rb_root* root)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root)
+getRBTreeDepth	source/framework/model/rbtree_ops.c	/^static int getRBTreeDepth(struct rb_root* root)$/;"	f	language:C	typeref:typename:int	file:	signature:(struct rb_root * root)
+get_current_time_byYMD	source/framework/time/time_ops.c	/^void get_current_time_byYMD(struct tm* tm)$/;"	f	language:C	typeref:typename:void	signature:(struct tm * tm)
+get_current_time_bymsec	source/framework/time/time_ops.c	/^long get_current_time_bymsec(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
+get_current_time_byns	source/framework/time/time_ops.c	/^long get_current_time_byns(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
+get_current_time_bysec	source/framework/time/time_ops.c	/^long get_current_time_bysec(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
+get_current_time_byus	source/framework/time/time_ops.c	/^long get_current_time_byus(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
+hello_exit	source/framework/model/rbtree_ops.c	/^static void __exit hello_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
+hello_init	source/framework/model/rbtree_ops.c	/^static int __init hello_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
+insertRBTree	source/framework/model/rbtree_ops.c	/^static void insertRBTree(struct rb_root *root,struct cache_node_info *my_node)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,struct cache_node_info * my_node)
+key	source/framework/model/rbtree_ops.c	/^    int key;$/;"	m	language:C	struct:cache_node_info	typeref:typename:int	file:
+my_exit	source/framework/model/model.c	/^static void __exit my_exit(void) {$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
+my_init	source/framework/model/model.c	/^static int __init my_init(void) {$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
+my_thread_func	source/framework/model/model.c	/^static int my_thread_func(void *data) {$/;"	f	language:C	typeref:typename:int	file:	signature:(void * data)
+my_time_exit	source/framework/time/time_ops.c	/^static void __exit my_time_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
+my_time_init	source/framework/time/time_ops.c	/^static int __init my_time_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
+node	source/framework/model/rbtree_ops.c	/^    struct rb_node node;$/;"	m	language:C	struct:cache_node_info	typeref:struct:rb_node	file:
+searchRBTreeByKey	source/framework/model/rbtree_ops.c	/^static void searchRBTreeByKey(struct rb_root* root,int key)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,int key)
+searchRBTreeByNode	source/framework/model/rbtree_ops.c	/^static void searchRBTreeByNode(struct rb_root *root,struct cache_node_info *my_node)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,struct cache_node_info * my_node)
+task	source/framework/model/model.c	/^static struct task_struct *task;$/;"	v	language:C	typeref:struct:task_struct *	file:

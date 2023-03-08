@@ -1,0 +1,1 @@
+cmd_drivers/examples/model/test.ko := /home/rlk/xiafeng.luo/CrossCompileTools/gcc-linaro-12.2.1-2022.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-ld -r  -EL  -maarch64elf -z noexecstack   --build-id=sha1  -T scripts/module.lds -o drivers/examples/model/test.ko drivers/examples/model/test.o drivers/examples/model/test.mod.o;  true
