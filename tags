@@ -8,6 +8,10 @@
 INCLUDE_VERMAGIC	source/framework/model/test.mod.c	/^#define INCLUDE_VERMAGIC$/;"	d	language:C	file:
 MY_TIME_OPS_H	include/framework/time/time_ops.h	/^#define MY_TIME_OPS_H$/;"	d	language:C++
 cache_node_info	source/framework/model/rbtree_ops.c	/^struct cache_node_info {$/;"	s	language:C	file:
+create_kthread_and_run	source/framework/task/task_ops.c	/^int32_t create_kthread_and_run(int (*func)(void* data),void* data)$/;"	f	language:C	typeref:typename:int32_t	signature:(int (* func)(void * data),void * data)
+create_kthread_and_wait	source/framework/task/task_ops.c	/^int32_t create_kthread_and_wait(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
+create_kthread_and_wait_for_completion	source/framework/task/task_ops.c	/^int32_t create_kthread_and_wait_for_completion(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
+create_kthread_on_node	source/framework/task/task_ops.c	/^int32_t create_kthread_on_node(int (*func)(void* data),char* task_name,void* data,int node_id)$/;"	f	language:C	typeref:typename:int32_t	signature:(int (* func)(void * data),char * task_name,void * data,int node_id)
 deleteRBTreeNode	source/framework/model/rbtree_ops.c	/^static void deleteRBTreeNode(struct rb_root* root,int key)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,int key)
 displayCurrentTimeByYMDS	source/framework/time/time_ops.c	/^void displayCurrentTimeByYMDS(void)$/;"	f	language:C	typeref:typename:void	signature:(void)
 displayRBTree	source/framework/model/rbtree_ops.c	/^static void displayRBTree(struct rb_root* root)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root)
@@ -17,12 +21,15 @@ get_current_time_bymsec	source/framework/time/time_ops.c	/^long get_current_time
 get_current_time_byns	source/framework/time/time_ops.c	/^long get_current_time_byns(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
 get_current_time_bysec	source/framework/time/time_ops.c	/^long get_current_time_bysec(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
 get_current_time_byus	source/framework/time/time_ops.c	/^long get_current_time_byus(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
+get_task_state_as_char	source/framework/task/task_ops.c	/^const char* get_task_state_as_char(struct task_struct* task)$/;"	f	language:C	typeref:typename:const char *	signature:(struct task_struct * task)
 hello_exit	source/framework/model/rbtree_ops.c	/^static void __exit hello_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
 hello_init	source/framework/model/rbtree_ops.c	/^static int __init hello_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
 insertRBTree	source/framework/model/rbtree_ops.c	/^static void insertRBTree(struct rb_root *root,struct cache_node_info *my_node)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,struct cache_node_info * my_node)
 key	source/framework/model/rbtree_ops.c	/^    int key;$/;"	m	language:C	struct:cache_node_info	typeref:typename:int	file:
 my_exit	source/framework/model/model.c	/^static void __exit my_exit(void) {$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
 my_init	source/framework/model/model.c	/^static int __init my_init(void) {$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
+my_kthread_ops_exit	source/framework/task/task_ops.c	/^static void __exit my_kthread_ops_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
+my_kthread_ops_init	source/framework/task/task_ops.c	/^static int __init my_kthread_ops_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
 my_thread_func	source/framework/model/model.c	/^static int my_thread_func(void *data) {$/;"	f	language:C	typeref:typename:int	file:	signature:(void * data)
 my_time_exit	source/framework/time/time_ops.c	/^static void __exit my_time_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
 my_time_init	source/framework/time/time_ops.c	/^static int __init my_time_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
@@ -30,3 +37,5 @@ node	source/framework/model/rbtree_ops.c	/^    struct rb_node node;$/;"	m	langua
 searchRBTreeByKey	source/framework/model/rbtree_ops.c	/^static void searchRBTreeByKey(struct rb_root* root,int key)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,int key)
 searchRBTreeByNode	source/framework/model/rbtree_ops.c	/^static void searchRBTreeByNode(struct rb_root *root,struct cache_node_info *my_node)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,struct cache_node_info * my_node)
 task	source/framework/model/model.c	/^static struct task_struct *task;$/;"	v	language:C	typeref:struct:task_struct *	file:
+task_state_array	source/framework/task/task_ops.c	/^ static const char * const task_state_array[] = {$/;"	v	language:C	typeref:typename:const char * const[]	file:
+test_call_back	source/framework/task/task_ops.c	/^static int test_call_back(void* data)$/;"	f	language:C	typeref:typename:int	file:	signature:(void * data)
