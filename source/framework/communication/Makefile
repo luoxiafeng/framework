@@ -1,0 +1,1 @@
+obj-y += netlink_ops.o

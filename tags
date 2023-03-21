@@ -5,7 +5,6 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
-INCLUDE_VERMAGIC	source/framework/model/test.mod.c	/^#define INCLUDE_VERMAGIC$/;"	d	language:C	file:
 MY_TIME_OPS_H	include/framework/time/time_ops.h	/^#define MY_TIME_OPS_H$/;"	d	language:C++
 cache_node_info	source/framework/model/rbtree_ops.c	/^struct cache_node_info {$/;"	s	language:C	file:
 create_kthread_and_run	source/framework/task/task_ops.c	/^int32_t create_kthread_and_run(int (*func)(void* data),void* data)$/;"	f	language:C	typeref:typename:int32_t	signature:(int (* func)(void * data),void * data)

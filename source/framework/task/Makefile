@@ -1,1 +1,1 @@
-obj-y += task_ops.o
+#obj-y += task_ops.o

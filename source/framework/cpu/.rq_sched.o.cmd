@@ -1,8 +1,8 @@
-cmd_drivers/framework/time/time_ops.o := /home/rlk/xiafeng.luo/CrossCompileTools/gcc-linaro-12.2.1-2022.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc -Wp,-MMD,drivers/framework/time/.time_ops.o.d  -nostdinc -I./arch/arm64/include -I./arch/arm64/include/generated  -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -g3 -gdwarf-2 -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret+leaf -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=2048 -fstack-protector-strong -Wno-array-bounds -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -fno-var-tracking -femit-struct-debug-baseonly -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1464    -DKBUILD_MODFILE='"drivers/framework/time/time_ops"' -DKBUILD_BASENAME='"time_ops"' -DKBUILD_MODNAME='"time_ops"' -D__KBUILD_MODNAME=kmod_time_ops -c -o drivers/framework/time/time_ops.o drivers/framework/time/time_ops.c  
+cmd_drivers/framework/cpu/rq_sched.o := /home/rlk/xiafeng.luo/CrossCompileTools/gcc-linaro-12.2.1-2022.11-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc -Wp,-MMD,drivers/framework/cpu/.rq_sched.o.d  -nostdinc -I./arch/arm64/include -I./arch/arm64/include/generated  -I./include -I./arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -g3 -gdwarf-2 -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret+leaf -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=2048 -fstack-protector-strong -Wno-array-bounds -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -fno-var-tracking -femit-struct-debug-baseonly -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1464    -DKBUILD_MODFILE='"drivers/framework/cpu/rq_sched"' -DKBUILD_BASENAME='"rq_sched"' -DKBUILD_MODNAME='"rq_sched"' -D__KBUILD_MODNAME=kmod_rq_sched -c -o drivers/framework/cpu/rq_sched.o drivers/framework/cpu/rq_sched.c  
 
-source_drivers/framework/time/time_ops.o := drivers/framework/time/time_ops.c
+source_drivers/framework/cpu/rq_sched.o := drivers/framework/cpu/rq_sched.c
 
-deps_drivers/framework/time/time_ops.o := \
+deps_drivers/framework/cpu/rq_sched.o := \
   include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   include/linux/kconfig.h \
@@ -915,8 +915,429 @@ deps_drivers/framework/time/time_ops.o := \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
-  include/linux/framework/time/time_ops.h \
+  include/linux/framework/cpu/rq_sched.h \
+  include/linux/delay.h \
+  arch/arm64/include/generated/asm/delay.h \
+  include/asm-generic/delay.h \
+  include/linux/kthread.h \
+  include/linux/sched/debug.h \
+    $(wildcard include/config/SCHED_DEBUG) \
+  /home/rlk/xiafeng.luo/buildroot-2022.11-rc2/linux/linux-6.0.9/kernel/sched/sched.h \
+    $(wildcard include/config/PARAVIRT) \
+    $(wildcard include/config/CPU_FREQ_GOV_SCHEDUTIL) \
+    $(wildcard include/config/CFS_BANDWIDTH) \
+    $(wildcard include/config/UCLAMP_TASK_GROUP) \
+    $(wildcard include/config/IRQ_WORK) \
+    $(wildcard include/config/NO_HZ_COMMON) \
+    $(wildcard include/config/HAVE_SCHED_AVG_IRQ) \
+    $(wildcard include/config/SCHED_THERMAL_PRESSURE) \
+    $(wildcard include/config/IRQ_TIME_ACCOUNTING) \
+    $(wildcard include/config/PARAVIRT_TIME_ACCOUNTING) \
+    $(wildcard include/config/SCHED_HRTICK) \
+    $(wildcard include/config/CPU_IDLE) \
+    $(wildcard include/config/CPU_FREQ) \
+    $(wildcard include/config/ENERGY_MODEL) \
+  include/linux/sched/affinity.h \
+  include/linux/sched/autogroup.h \
+  include/linux/sched/cpufreq.h \
+  include/linux/sched/deadline.h \
+  include/linux/sched/loadavg.h \
+  include/linux/sched/rseq_api.h \
+  include/linux/sched/smt.h \
+  include/linux/sched/stat.h \
+  include/linux/sched/sysctl.h \
+  include/linux/sched/task_flags.h \
+  include/linux/sched/topology.h \
+    $(wildcard include/config/SCHED_CLUSTER) \
+    $(wildcard include/config/SCHED_MC) \
+  include/linux/sched/idle.h \
+  include/linux/sched/sd_flags.h \
+  include/linux/cgroup_api.h \
+  include/linux/cgroup.h \
+    $(wildcard include/config/CGROUP_CPUACCT) \
+    $(wildcard include/config/SOCK_CGROUP_DATA) \
+    $(wildcard include/config/CGROUP_DATA) \
+    $(wildcard include/config/CGROUP_BPF) \
+  include/uapi/linux/cgroupstats.h \
+  include/uapi/linux/taskstats.h \
+  include/linux/seq_file.h \
+  include/linux/string_helpers.h \
+  include/linux/ctype.h \
+  include/linux/ns_common.h \
+  include/linux/nsproxy.h \
+  include/linux/user_namespace.h \
+    $(wildcard include/config/INOTIFY_USER) \
+    $(wildcard include/config/FANOTIFY) \
+    $(wildcard include/config/PERSISTENT_KEYRINGS) \
+  include/linux/kernel_stat.h \
+  include/linux/interrupt.h \
+    $(wildcard include/config/IRQ_FORCED_THREADING) \
+    $(wildcard include/config/GENERIC_IRQ_PROBE) \
+    $(wildcard include/config/IRQ_TIMINGS) \
+  include/linux/irqreturn.h \
+  include/linux/hardirq.h \
+  include/linux/context_tracking_state.h \
+    $(wildcard include/config/CONTEXT_TRACKING_USER) \
+    $(wildcard include/config/CONTEXT_TRACKING) \
+  include/linux/ftrace_irq.h \
+    $(wildcard include/config/HWLAT_TRACER) \
+    $(wildcard include/config/OSNOISE_TRACER) \
+  include/linux/vtime.h \
+    $(wildcard include/config/VIRT_CPU_ACCOUNTING) \
+  arch/arm64/include/asm/hardirq.h \
+  arch/arm64/include/asm/irq.h \
+  include/asm-generic/irq.h \
+  arch/arm64/include/asm/kvm_arm.h \
+  arch/arm64/include/asm/esr.h \
+  include/asm-generic/hardirq.h \
+  include/linux/irq.h \
+    $(wildcard include/config/GENERIC_IRQ_EFFECTIVE_AFF_MASK) \
+    $(wildcard include/config/GENERIC_IRQ_IPI) \
+    $(wildcard include/config/IRQ_DOMAIN_HIERARCHY) \
+    $(wildcard include/config/DEPRECATED_IRQ_CPU_ONOFFLINE) \
+    $(wildcard include/config/GENERIC_IRQ_MIGRATION) \
+    $(wildcard include/config/GENERIC_PENDING_IRQ) \
+    $(wildcard include/config/HARDIRQS_SW_RESEND) \
+    $(wildcard include/config/GENERIC_IRQ_LEGACY) \
+    $(wildcard include/config/GENERIC_IRQ_MULTI_HANDLER) \
+  include/linux/irqhandler.h \
+  include/linux/io.h \
+    $(wildcard include/config/HAS_IOPORT_MAP) \
+    $(wildcard include/config/PCI) \
+  arch/arm64/include/asm/io.h \
+  include/linux/pgtable.h \
+    $(wildcard include/config/HIGHPTE) \
+    $(wildcard include/config/GUP_GET_PTE_LOW_HIGH) \
+    $(wildcard include/config/HAVE_ARCH_TRANSPARENT_HUGEPAGE_PUD) \
+    $(wildcard include/config/HAVE_ARCH_SOFT_DIRTY) \
+    $(wildcard include/config/ARCH_ENABLE_THP_MIGRATION) \
+    $(wildcard include/config/ARCH_HAS_PTE_DEVMAP) \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMAP) \
+    $(wildcard include/config/X86_ESPFIX64) \
+  arch/arm64/include/asm/pgtable.h \
+    $(wildcard include/config/PAGE_TABLE_CHECK) \
+  arch/arm64/include/asm/proc-fns.h \
+  arch/arm64/include/asm/pgtable-prot.h \
+    $(wildcard include/config/ARM64_BTI_KERNEL) \
+  arch/arm64/include/asm/tlbflush.h \
+    $(wildcard include/config/ARM64_WORKAROUND_REPEAT_TLBI) \
+  arch/arm64/include/asm/fixmap.h \
+    $(wildcard include/config/ACPI_APEI_GHES) \
+    $(wildcard include/config/ARM_SDE_INTERFACE) \
+    $(wildcard include/config/UNMAP_KERNEL_AT_EL0) \
+    $(wildcard include/config/RELOCATABLE) \
+  include/asm-generic/fixmap.h \
+  include/linux/page_table_check.h \
+  include/asm-generic/pgtable_uffd.h \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_WP) \
+  arch/arm64/include/generated/asm/early_ioremap.h \
+  include/asm-generic/early_ioremap.h \
+    $(wildcard include/config/GENERIC_EARLY_IOREMAP) \
+  include/asm-generic/io.h \
+    $(wildcard include/config/GENERIC_IOMAP) \
+    $(wildcard include/config/TRACE_MMIO_ACCESS) \
+    $(wildcard include/config/GENERIC_IOREMAP) \
+  include/asm-generic/pci_iomap.h \
+    $(wildcard include/config/NO_GENERIC_PCI_IOPORT_MAP) \
+    $(wildcard include/config/GENERIC_PCI_IOMAP) \
+  include/linux/logic_pio.h \
+    $(wildcard include/config/INDIRECT_PIO) \
+  include/linux/fwnode.h \
+  include/linux/vmalloc.h \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMALLOC) \
+  arch/arm64/include/asm/vmalloc.h \
+    $(wildcard include/config/PTDUMP_DEBUGFS) \
+  arch/arm64/include/generated/asm/irq_regs.h \
+  include/asm-generic/irq_regs.h \
+  include/linux/irqdesc.h \
+    $(wildcard include/config/GENERIC_IRQ_DEBUGFS) \
+    $(wildcard include/config/SPARSE_IRQ) \
+    $(wildcard include/config/IRQ_DOMAIN) \
+  arch/arm64/include/generated/asm/hw_irq.h \
+  include/asm-generic/hw_irq.h \
+  include/linux/cgroup-defs.h \
+    $(wildcard include/config/CGROUP_NET_CLASSID) \
+    $(wildcard include/config/CGROUP_NET_PRIO) \
+  include/linux/u64_stats_sync.h \
+  arch/arm64/include/generated/asm/local64.h \
+  include/asm-generic/local64.h \
+  arch/arm64/include/generated/asm/local.h \
+  include/asm-generic/local.h \
+  include/linux/bpf-cgroup-defs.h \
+    $(wildcard include/config/BPF_LSM) \
+  include/linux/psi_types.h \
+  include/linux/cgroup_subsys.h \
+    $(wildcard include/config/CGROUP_DEVICE) \
+    $(wildcard include/config/CGROUP_FREEZER) \
+    $(wildcard include/config/CGROUP_PERF) \
+    $(wildcard include/config/CGROUP_HUGETLB) \
+    $(wildcard include/config/CGROUP_PIDS) \
+    $(wildcard include/config/CGROUP_RDMA) \
+    $(wildcard include/config/CGROUP_MISC) \
+    $(wildcard include/config/CGROUP_DEBUG) \
+  include/linux/context_tracking.h \
+    $(wildcard include/config/HAVE_CONTEXT_TRACKING_USER_OFFSTACK) \
+    $(wildcard include/config/CONTEXT_TRACKING_USER_FORCE) \
+  include/linux/cpufreq.h \
+    $(wildcard include/config/CPU_FREQ_STAT) \
+    $(wildcard include/config/CPU_THERMAL) \
+    $(wildcard include/config/PM_OPP) \
+  include/linux/clk.h \
+    $(wildcard include/config/COMMON_CLK) \
+    $(wildcard include/config/HAVE_CLK_PREPARE) \
+    $(wildcard include/config/HAVE_CLK) \
+    $(wildcard include/config/OF) \
+  include/linux/cpu.h \
+    $(wildcard include/config/PM_SLEEP_SMP) \
+    $(wildcard include/config/PM_SLEEP_SMP_NONZERO_CPU) \
+    $(wildcard include/config/HOTPLUG_SMT) \
+  include/linux/node.h \
+    $(wildcard include/config/HMEM_REPORTING) \
+    $(wildcard include/config/HUGETLBFS) \
+  include/linux/device.h \
+    $(wildcard include/config/GENERIC_MSI_IRQ_DOMAIN) \
+    $(wildcard include/config/GENERIC_MSI_IRQ) \
+    $(wildcard include/config/PINCTRL) \
+    $(wildcard include/config/DMA_OPS) \
+    $(wildcard include/config/DMA_DECLARE_COHERENT) \
+    $(wildcard include/config/DMA_CMA) \
+    $(wildcard include/config/SWIOTLB) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_DEVICE) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU_ALL) \
+    $(wildcard include/config/DMA_OPS_BYPASS) \
+    $(wildcard include/config/DEVTMPFS) \
+    $(wildcard include/config/SYSFS_DEPRECATED) \
+  include/linux/dev_printk.h \
+  include/linux/energy_model.h \
+  include/linux/ioport.h \
+  include/linux/klist.h \
+  include/linux/pm.h \
+    $(wildcard include/config/VT_CONSOLE_SLEEP) \
+    $(wildcard include/config/CXL_SUSPEND) \
+    $(wildcard include/config/PM) \
+    $(wildcard include/config/PM_CLK) \
+    $(wildcard include/config/PM_GENERIC_DOMAINS) \
+  include/linux/device/bus.h \
+    $(wildcard include/config/ACPI) \
+  include/linux/device/class.h \
+  include/linux/device/driver.h \
+  arch/arm64/include/asm/device.h \
+  include/linux/pm_wakeup.h \
+  include/linux/cpuhotplug.h \
+  include/linux/of.h \
+    $(wildcard include/config/OF_DYNAMIC) \
+    $(wildcard include/config/SPARC) \
+    $(wildcard include/config/OF_PROMTREE) \
+    $(wildcard include/config/OF_KOBJ) \
+    $(wildcard include/config/OF_NUMA) \
+    $(wildcard include/config/OF_OVERLAY) \
+  include/linux/mod_devicetable.h \
+  include/linux/property.h \
+  include/linux/of_device.h \
+  include/linux/platform_device.h \
+    $(wildcard include/config/SUSPEND) \
+    $(wildcard include/config/HIBERNATE_CALLBACKS) \
+    $(wildcard include/config/SUPERH) \
+  include/linux/of_platform.h \
+    $(wildcard include/config/OF_ADDRESS) \
+  include/linux/pm_opp.h \
+  include/linux/pm_qos.h \
+  include/linux/cpumask_api.h \
+  include/linux/file.h \
+  include/linux/fs_api.h \
+  include/linux/hrtimer_api.h \
+  include/linux/irq_work.h \
+  arch/arm64/include/asm/irq_work.h \
+  include/linux/kref_api.h \
+  include/linux/ktime_api.h \
+  include/linux/lockdep_api.h \
+  include/linux/mm.h \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_BITS) \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_COMPAT_BITS) \
+    $(wildcard include/config/MEM_SOFT_DIRTY) \
+    $(wildcard include/config/ARCH_USES_HIGH_VMA_FLAGS) \
+    $(wildcard include/config/ARCH_HAS_PKEYS) \
+    $(wildcard include/config/PPC) \
+    $(wildcard include/config/X86) \
+    $(wildcard include/config/PARISC) \
+    $(wildcard include/config/SPARC64) \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_MINOR) \
+    $(wildcard include/config/SHMEM) \
+    $(wildcard include/config/MIGRATION) \
+    $(wildcard include/config/ARCH_HAS_PTE_SPECIAL) \
+    $(wildcard include/config/DEBUG_VM_RB) \
+    $(wildcard include/config/PAGE_POISONING) \
+    $(wildcard include/config/INIT_ON_ALLOC_DEFAULT_ON) \
+    $(wildcard include/config/INIT_ON_FREE_DEFAULT_ON) \
+    $(wildcard include/config/DEBUG_PAGEALLOC) \
+    $(wildcard include/config/MAPPING_DIRTY_HELPERS) \
+    $(wildcard include/config/ANON_VMA_NAME) \
+  include/linux/mmap_lock.h \
+  include/linux/range.h \
+  include/linux/page_ext.h \
+  include/linux/stacktrace.h \
+    $(wildcard include/config/ARCH_STACKWALK) \
+    $(wildcard include/config/STACKTRACE) \
+    $(wildcard include/config/HAVE_RELIABLE_STACKTRACE) \
+  include/linux/stackdepot.h \
+    $(wildcard include/config/STACKDEPOT) \
+  include/linux/page_ref.h \
+    $(wildcard include/config/DEBUG_PAGE_REF) \
+  include/linux/memremap.h \
+    $(wildcard include/config/DEVICE_PRIVATE) \
+    $(wildcard include/config/PCI_P2PDMA) \
+  include/linux/huge_mm.h \
+  include/linux/sched/coredump.h \
+    $(wildcard include/config/CORE_DUMP_DEFAULT_ELF_HEADERS) \
+  include/linux/vmstat.h \
+    $(wildcard include/config/VM_EVENT_COUNTERS) \
+    $(wildcard include/config/DEBUG_TLBFLUSH) \
+    $(wildcard include/config/DEBUG_VM_VMACACHE) \
+  include/linux/vm_event_item.h \
+    $(wildcard include/config/MEMORY_BALLOON) \
+    $(wildcard include/config/BALLOON_COMPACTION) \
+    $(wildcard include/config/ZSWAP) \
+  include/linux/mutex_api.h \
+  include/linux/poll.h \
+  include/uapi/linux/poll.h \
+  arch/arm64/include/generated/uapi/asm/poll.h \
+  include/uapi/asm-generic/poll.h \
+  include/uapi/linux/eventpoll.h \
+  include/linux/proc_fs.h \
+    $(wildcard include/config/PROC_PID_ARCH_STATUS) \
+  include/linux/profile.h \
+    $(wildcard include/config/PROFILING) \
+  include/linux/psi.h \
+  include/linux/softirq.h \
+  include/linux/spinlock_api.h \
+  include/linux/stop_machine.h \
+  include/linux/syscalls_api.h \
+  include/linux/syscalls.h \
+    $(wildcard include/config/ARCH_HAS_SYSCALL_WRAPPER) \
+    $(wildcard include/config/FTRACE_SYSCALLS) \
+    $(wildcard include/config/ODD_RT_SIGACTION) \
+    $(wildcard include/config/CLONE_BACKWARDS) \
+    $(wildcard include/config/CLONE_BACKWARDS3) \
+    $(wildcard include/config/OLD_SIGSUSPEND) \
+    $(wildcard include/config/OLD_SIGSUSPEND3) \
+    $(wildcard include/config/ADVISE_SYSCALLS) \
+  include/uapi/linux/aio_abi.h \
+  include/trace/syscall.h \
+    $(wildcard include/config/HAVE_SYSCALL_TRACEPOINTS) \
+  include/linux/tracepoint.h \
+  include/linux/static_call.h \
+  include/linux/trace_events.h \
+    $(wildcard include/config/DYNAMIC_EVENTS) \
+    $(wildcard include/config/KPROBE_EVENTS) \
+    $(wildcard include/config/UPROBE_EVENTS) \
+  include/linux/ring_buffer.h \
+    $(wildcard include/config/RING_BUFFER_ALLOW_SWAP) \
+    $(wildcard include/config/RING_BUFFER) \
+  include/linux/trace_seq.h \
+  include/linux/seq_buf.h \
+  include/linux/perf_event.h \
+    $(wildcard include/config/FUNCTION_TRACER) \
+    $(wildcard include/config/GUEST_PERF_EVENTS) \
+  include/uapi/linux/perf_event.h \
+  include/uapi/linux/bpf_perf_event.h \
+  arch/arm64/include/uapi/asm/bpf_perf_event.h \
+  arch/arm64/include/asm/perf_event.h \
+  include/linux/pid_namespace.h \
+    $(wildcard include/config/PID_NS) \
+  include/linux/ftrace.h \
+    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_ARGS) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_REGS) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
+    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
+    $(wildcard include/config/STACK_TRACER) \
+    $(wildcard include/config/FRAME_POINTER) \
+    $(wildcard include/config/FUNCTION_PROFILER) \
+  include/linux/trace_recursion.h \
+    $(wildcard include/config/FTRACE_RECORD_RECURSION) \
+  include/linux/trace_clock.h \
+  arch/arm64/include/generated/asm/trace_clock.h \
+  include/asm-generic/trace_clock.h \
+  include/linux/kallsyms.h \
+    $(wildcard include/config/KALLSYMS_ALL) \
+  include/linux/ptrace.h \
+  include/uapi/linux/ptrace.h \
+  arch/arm64/include/asm/ftrace.h \
+  include/linux/compat.h \
+    $(wildcard include/config/X86_X32_ABI) \
+    $(wildcard include/config/COMPAT_OLD_SIGACTION) \
+  include/linux/socket.h \
+  arch/arm64/include/generated/uapi/asm/socket.h \
+  include/uapi/asm-generic/socket.h \
+  arch/arm64/include/generated/uapi/asm/sockios.h \
+  include/uapi/asm-generic/sockios.h \
+  include/uapi/linux/sockios.h \
+  include/linux/uio.h \
+    $(wildcard include/config/ARCH_HAS_COPY_MC) \
+  include/uapi/linux/uio.h \
+  include/uapi/linux/socket.h \
+  include/uapi/linux/if.h \
+  include/uapi/linux/libc-compat.h \
+  include/uapi/linux/hdlc/ioctl.h \
+  arch/arm64/include/asm/syscall_wrapper.h \
+  include/linux/jump_label_ratelimit.h \
+  include/linux/perf_regs.h \
+    $(wildcard include/config/HAVE_PERF_REGS) \
+  arch/arm64/include/uapi/asm/perf_regs.h \
+  include/linux/security.h \
+    $(wildcard include/config/SECURITY_NETWORK) \
+    $(wildcard include/config/SECURITY_INFINIBAND) \
+    $(wildcard include/config/SECURITY_NETWORK_XFRM) \
+    $(wildcard include/config/SECURITY_PATH) \
+    $(wildcard include/config/SECURITYFS) \
+  include/linux/kernel_read_file.h \
+  include/linux/tick.h \
+    $(wildcard include/config/GENERIC_CLOCKEVENTS) \
+    $(wildcard include/config/TICK_ONESHOT) \
+    $(wildcard include/config/GENERIC_CLOCKEVENTS_BROADCAST) \
+  include/linux/clockchips.h \
+    $(wildcard include/config/ARCH_HAS_TICK_BROADCAST) \
+  include/linux/clocksource.h \
+    $(wildcard include/config/ARCH_CLOCKSOURCE_DATA) \
+    $(wildcard include/config/GENERIC_GETTIMEOFDAY) \
+    $(wildcard include/config/CLOCKSOURCE_WATCHDOG) \
+    $(wildcard include/config/ARCH_CLOCKSOURCE_INIT) \
+    $(wildcard include/config/TIMER_PROBE) \
+  arch/arm64/include/asm/clocksource.h \
+  arch/arm64/include/asm/vdso/clocksource.h \
+  include/vdso/clocksource.h \
+  include/linux/u64_stats_sync_api.h \
+  include/linux/wait_api.h \
+  include/linux/workqueue_api.h \
+  include/trace/events/power.h \
+  include/trace/define_trace.h \
+  include/trace/events/sched.h \
+  include/linux/sched/numa_balancing.h \
+  include/linux/binfmts.h \
+    $(wildcard include/config/COREDUMP) \
+  arch/arm64/include/asm/exec.h \
+  include/uapi/linux/binfmts.h \
+  /home/rlk/xiafeng.luo/buildroot-2022.11-rc2/linux/linux-6.0.9/kernel/sched/../workqueue_internal.h \
+  arch/arm64/include/asm/paravirt.h \
+  arch/arm64/include/asm/paravirt_api_clock.h \
+  /home/rlk/xiafeng.luo/buildroot-2022.11-rc2/linux/linux-6.0.9/kernel/sched/cpupri.h \
+  /home/rlk/xiafeng.luo/buildroot-2022.11-rc2/linux/linux-6.0.9/kernel/sched/cpudeadline.h \
+  /home/rlk/xiafeng.luo/buildroot-2022.11-rc2/linux/linux-6.0.9/kernel/sched/stats.h \
+  /home/rlk/xiafeng.luo/buildroot-2022.11-rc2/linux/linux-6.0.9/kernel/sched/features.h \
+  include/linux/framework/task/task_ops.h \
+  include/asm-generic/vmlinux.lds.h \
+    $(wildcard include/config/LD_DEAD_CODE_DATA_ELIMINATION) \
+    $(wildcard include/config/SERIAL_EARLYCON) \
+    $(wildcard include/config/TIMER_OF) \
+    $(wildcard include/config/IRQCHIP) \
+    $(wildcard include/config/OF_RESERVED_MEM) \
+    $(wildcard include/config/THERMAL) \
+    $(wildcard include/config/UNWINDER_ORC) \
+    $(wildcard include/config/FW_LOADER) \
+    $(wildcard include/config/PM_TRACE) \
+    $(wildcard include/config/BLK_DEV_INITRD) \
+    $(wildcard include/config/GCOV_KERNEL) \
 
-drivers/framework/time/time_ops.o: $(deps_drivers/framework/time/time_ops.o)
+drivers/framework/cpu/rq_sched.o: $(deps_drivers/framework/cpu/rq_sched.o)
 
-$(deps_drivers/framework/time/time_ops.o):
+$(deps_drivers/framework/cpu/rq_sched.o):
