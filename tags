@@ -5,36 +5,86 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
+MAX_CPUS	source/framework/cpu/rq_sched.c	/^#define MAX_CPUS /;"	d	language:C	file:
 MY_TIME_OPS_H	include/framework/time/time_ops.h	/^#define MY_TIME_OPS_H$/;"	d	language:C++
+NETLINK_TEST	source/framework/communication/netlink_ops.c	/^#define NETLINK_TEST /;"	d	language:C	file:
+NETLINK_TEST	source/framework/communication/samples/netlink_ops_test.c	/^#define NETLINK_TEST /;"	d	language:C	file:
+PAYLOAD_MAX_SIZE	source/framework/communication/netlink_ops.c	/^#define PAYLOAD_MAX_SIZE /;"	d	language:C	file:
+PAYLOAD_MAX_SIZE	source/framework/communication/samples/netlink_ops_test.c	/^#define PAYLOAD_MAX_SIZE /;"	d	language:C	file:
+__NETLINK_OPS_H__	include/framework/communication/netlink_ops.h	/^#define __NETLINK_OPS_H__$/;"	d	language:C++
+__RQ_SCHED_H__	include/framework/cpu/rq_sched.h	/^#define __RQ_SCHED_H__$/;"	d	language:C++
+__TASK_OPS_H__	include/framework/task/task_ops.h	/^#define __TASK_OPS_H__$/;"	d	language:C++
+aval	source/framework/cpu/per_cpu.c	/^static int __percpu *aval;$/;"	v	language:C	typeref:typename:int __percpu *	file:
 cache_node_info	source/framework/model/rbtree_ops.c	/^struct cache_node_info {$/;"	s	language:C	file:
-create_kthread_and_run	source/framework/task/task_ops.c	/^int32_t create_kthread_and_run(int (*func)(void* data),void* data)$/;"	f	language:C	typeref:typename:int32_t	signature:(int (* func)(void * data),void * data)
+create_kthread_and_run	source/framework/task/task_ops.c	/^struct task_struct * create_kthread_and_run(int (*func)(void* data),void* data,const char* task_/;"	f	language:C	typeref:struct:task_struct *	signature:(int (* func)(void * data),void * data,const char * task_name)
 create_kthread_and_wait	source/framework/task/task_ops.c	/^int32_t create_kthread_and_wait(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
 create_kthread_and_wait_for_completion	source/framework/task/task_ops.c	/^int32_t create_kthread_and_wait_for_completion(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
 create_kthread_on_node	source/framework/task/task_ops.c	/^int32_t create_kthread_on_node(int (*func)(void* data),char* task_name,void* data,int node_id)$/;"	f	language:C	typeref:typename:int32_t	signature:(int (* func)(void * data),char * task_name,void * data,int node_id)
 deleteRBTreeNode	source/framework/model/rbtree_ops.c	/^static void deleteRBTreeNode(struct rb_root* root,int key)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,int key)
 displayCurrentTimeByYMDS	source/framework/time/time_ops.c	/^void displayCurrentTimeByYMDS(void)$/;"	f	language:C	typeref:typename:void	signature:(void)
 displayRBTree	source/framework/model/rbtree_ops.c	/^static void displayRBTree(struct rb_root* root)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root)
+for_class_range	include/framework/task/task_ops.h	/^#define for_class_range(/;"	d	language:C++	signature:(class,_from,_to)
+for_each_class	include/framework/task/task_ops.h	/^#define for_each_class(/;"	d	language:C++	signature:(class)
 getRBTreeDepth	source/framework/model/rbtree_ops.c	/^static int getRBTreeDepth(struct rb_root* root)$/;"	f	language:C	typeref:typename:int	file:	signature:(struct rb_root * root)
+get_all_sched_class	source/framework/task/task_ops.c	/^int32_t get_all_sched_class(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
+get_all_task_on_each_sched_class	source/framework/task/task_ops.c	/^int32_t get_all_task_on_each_sched_class(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
+get_all_task_on_each_sched_id	source/framework/task/task_ops.c	/^int32_t get_all_task_on_each_sched_id(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
+get_cpu_masks	source/framework/cpu/cpu_usage.c	/^struct cpumask* get_cpu_masks(void)$/;"	f	language:C	typeref:struct:cpumask *	signature:(void)
 get_current_time_byYMD	source/framework/time/time_ops.c	/^void get_current_time_byYMD(struct tm* tm)$/;"	f	language:C	typeref:typename:void	signature:(struct tm * tm)
 get_current_time_bymsec	source/framework/time/time_ops.c	/^long get_current_time_bymsec(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
 get_current_time_byns	source/framework/time/time_ops.c	/^long get_current_time_byns(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
 get_current_time_bysec	source/framework/time/time_ops.c	/^long get_current_time_bysec(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
 get_current_time_byus	source/framework/time/time_ops.c	/^long get_current_time_byus(void)$/;"	f	language:C	typeref:typename:long	signature:(void)
+get_each_cpu_rq_info	source/framework/cpu/rq_sched.c	/^int32_t get_each_cpu_rq_info(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
+get_task_sched_statistics	source/framework/task/task_ops.c	/^int32_t get_task_sched_statistics(struct task_struct* tsk)$/;"	f	language:C	typeref:typename:int32_t	signature:(struct task_struct * tsk)
 get_task_state_as_char	source/framework/task/task_ops.c	/^const char* get_task_state_as_char(struct task_struct* task)$/;"	f	language:C	typeref:typename:const char *	signature:(struct task_struct * task)
+get_tasks_on_running_queue	source/framework/task/task_ops.c	/^int32_t get_tasks_on_running_queue(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
+get_tasks_ps	source/framework/task/task_ops.c	/^int32_t get_tasks_ps(void)$/;"	f	language:C	typeref:typename:int32_t	signature:(void)
 hello_exit	source/framework/model/rbtree_ops.c	/^static void __exit hello_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
 hello_init	source/framework/model/rbtree_ops.c	/^static int __init hello_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
 insertRBTree	source/framework/model/rbtree_ops.c	/^static void insertRBTree(struct rb_root *root,struct cache_node_info *my_node)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,struct cache_node_info * my_node)
+is_cpu_in_mask	source/framework/cpu/cpu_usage.c	/^bool is_cpu_in_mask(int cpu)$/;"	f	language:C	typeref:typename:bool	signature:(int cpu)
+is_kernel_progress	source/framework/task/task_ops.c	/^char* is_kernel_progress(struct task_struct* tsk)$/;"	f	language:C	typeref:typename:char *	signature:(struct task_struct * tsk)
+kernel_addr	source/framework/communication/samples/netlink_ops_test.c	/^struct sockaddr_nl  *kernel_addr = NULL;    \/\/ target address$/;"	v	language:C	typeref:struct:sockaddr_nl *
 key	source/framework/model/rbtree_ops.c	/^    int key;$/;"	m	language:C	struct:cache_node_info	typeref:typename:int	file:
+main	source/framework/communication/samples/netlink_ops_test.c	/^int main ()$/;"	f	language:C	typeref:typename:int	signature:()
+msg	source/framework/communication/samples/netlink_ops_test.c	/^struct test_nlmsg    *msg = NULL;            \/\/ message buffer$/;"	v	language:C	typeref:struct:test_nlmsg *
+msg_data	source/framework/communication/netlink_ops.c	/^    u8    msg_data[PAYLOAD_MAX_SIZE];$/;"	m	language:C	struct:test_nlmsg	typeref:typename:u8[]	file:
+msg_data	source/framework/communication/samples/netlink_ops_test.c	/^    uint8_t    msg_data[PAYLOAD_MAX_SIZE];$/;"	m	language:C	struct:test_nlmsg	typeref:typename:uint8_t[]	file:
+my_exit	source/framework/cpu/per_cpu.c	/^static void __exit my_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
 my_exit	source/framework/model/model.c	/^static void __exit my_exit(void) {$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
+my_init	source/framework/cpu/per_cpu.c	/^static int __init my_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
 my_init	source/framework/model/model.c	/^static int __init my_init(void) {$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
 my_kthread_ops_exit	source/framework/task/task_ops.c	/^static void __exit my_kthread_ops_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
 my_kthread_ops_init	source/framework/task/task_ops.c	/^static int __init my_kthread_ops_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
 my_thread_func	source/framework/model/model.c	/^static int my_thread_func(void *data) {$/;"	f	language:C	typeref:typename:int	file:	signature:(void * data)
 my_time_exit	source/framework/time/time_ops.c	/^static void __exit my_time_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
 my_time_init	source/framework/time/time_ops.c	/^static int __init my_time_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
+my_workqueue	source/framework/datastruct/workqueue.c	/^static int my_workqueue(void* data)$/;"	f	language:C	typeref:typename:int	file:	signature:(void * data)
+my_workqueue_exit	source/framework/datastruct/workqueue.c	/^static __exit void my_workqueue_exit(void)$/;"	f	language:C	typeref:typename:__exit void	file:	signature:(void)
+my_workqueue_init	source/framework/datastruct/workqueue.c	/^static __init int my_workqueue_init(void)$/;"	f	language:C	typeref:typename:__init int	file:	signature:(void)
+netlink_message_handle	source/framework/communication/netlink_ops.c	/^static void netlink_message_handle(struct sk_buff *skb)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct sk_buff * skb)
+netlink_socket	source/framework/communication/netlink_ops.c	/^struct sock *netlink_socket = NULL;$/;"	v	language:C	typeref:struct:sock *
+netlink_socket	source/framework/communication/samples/netlink_ops_test.c	/^int netlink_socket = -1;$/;"	v	language:C	typeref:typename:int
+nlh	source/framework/communication/netlink_ops.c	/^    struct nlmsghdr nlh;$/;"	m	language:C	struct:test_nlmsg	typeref:struct:nlmsghdr	file:
+nlh	source/framework/communication/samples/netlink_ops_test.c	/^    struct nlmsghdr nlh;$/;"	m	language:C	struct:test_nlmsg	typeref:struct:nlmsghdr	file:
 node	source/framework/model/rbtree_ops.c	/^    struct rb_node node;$/;"	m	language:C	struct:cache_node_info	typeref:struct:rb_node	file:
+pid	source/framework/communication/netlink_ops.c	/^pid_t pid = -1;    $/;"	v	language:C	typeref:typename:pid_t
+rq_sched_exit	source/framework/cpu/rq_sched.c	/^static void __exit rq_sched_exit(void)$/;"	f	language:C	typeref:typename:void __exit	file:	signature:(void)
+rq_sched_init	source/framework/cpu/rq_sched.c	/^static int __init rq_sched_init(void)$/;"	f	language:C	typeref:typename:int __init	file:	signature:(void)
 searchRBTreeByKey	source/framework/model/rbtree_ops.c	/^static void searchRBTreeByKey(struct rb_root* root,int key)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,int key)
 searchRBTreeByNode	source/framework/model/rbtree_ops.c	/^static void searchRBTreeByNode(struct rb_root *root,struct cache_node_info *my_node)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,struct cache_node_info * my_node)
 task	source/framework/model/model.c	/^static struct task_struct *task;$/;"	v	language:C	typeref:struct:task_struct *	file:
-task_state_array	source/framework/task/task_ops.c	/^ static const char * const task_state_array[] = {$/;"	v	language:C	typeref:typename:const char * const[]	file:
+task_is_on_running_queue	source/framework/task/task_ops.c	/^bool task_is_on_running_queue(struct task_struct* tsk)$/;"	f	language:C	typeref:typename:bool	signature:(struct task_struct * tsk)
+task_state_array	include/framework/task/task_ops.h	/^static const char * const task_state_array[] = {$/;"	v	language:C++	typeref:typename:const char * const[]
+test_call_back	source/framework/cpu/rq_sched.c	/^static int test_call_back(void* data)$/;"	f	language:C	typeref:typename:int	file:	signature:(void * data)
 test_call_back	source/framework/task/task_ops.c	/^static int test_call_back(void* data)$/;"	f	language:C	typeref:typename:int	file:	signature:(void * data)
+test_exit	source/framework/cpu/cpu_usage.c	/^static __exit void test_exit(void)$/;"	f	language:C	typeref:typename:__exit void	file:	signature:(void)
+test_exit	source/framework/schedule/schedule_ops.c	/^static __exit void test_exit(void)$/;"	f	language:C	typeref:typename:__exit void	file:	signature:(void)
+test_init	source/framework/cpu/cpu_usage.c	/^static __init int test_init(void)$/;"	f	language:C	typeref:typename:__init int	file:	signature:(void)
+test_init	source/framework/schedule/schedule_ops.c	/^static __init int test_init(void)$/;"	f	language:C	typeref:typename:__init int	file:	signature:(void)
+test_nlmsg	source/framework/communication/netlink_ops.c	/^struct test_nlmsg {$/;"	s	language:C	file:
+test_nlmsg	source/framework/communication/samples/netlink_ops_test.c	/^struct test_nlmsg {$/;"	s	language:C	file:
+test_socket_close	source/framework/communication/netlink_ops.c	/^static void test_socket_close(void)$/;"	f	language:C	typeref:typename:void	file:	signature:(void)
+test_socket_create	source/framework/communication/netlink_ops.c	/^static int test_socket_create(void)$/;"	f	language:C	typeref:typename:int	file:	signature:(void)
+user_addr	source/framework/communication/samples/netlink_ops_test.c	/^struct sockaddr_nl  *user_addr = NULL;      \/\/ self address$/;"	v	language:C	typeref:struct:sockaddr_nl *
