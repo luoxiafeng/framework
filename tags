@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
 MAX_CPUS	source/framework/cpu/rq_sched.c	/^#define MAX_CPUS /;"	d	language:C	file:
+MAX_PATH_LEN	source/framework/task/sample/dump_elf.c	/^#define MAX_PATH_LEN /;"	d	language:C	file:
 MY_TIME_OPS_H	include/framework/time/time_ops.h	/^#define MY_TIME_OPS_H$/;"	d	language:C++
 NETLINK_TEST	source/framework/communication/netlink_ops.c	/^#define NETLINK_TEST /;"	d	language:C	file:
 NETLINK_TEST	source/framework/communication/samples/netlink_ops_test.c	/^#define NETLINK_TEST /;"	d	language:C	file:
@@ -23,6 +24,16 @@ create_kthread_on_node	source/framework/task/task_ops.c	/^int32_t create_kthread
 deleteRBTreeNode	source/framework/model/rbtree_ops.c	/^static void deleteRBTreeNode(struct rb_root* root,int key)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root,int key)
 displayCurrentTimeByYMDS	source/framework/time/time_ops.c	/^void displayCurrentTimeByYMDS(void)$/;"	f	language:C	typeref:typename:void	signature:(void)
 displayRBTree	source/framework/model/rbtree_ops.c	/^static void displayRBTree(struct rb_root* root)$/;"	f	language:C	typeref:typename:void	file:	signature:(struct rb_root * root)
+dump_elf	source/framework/task/dump_segments.c	/^asmlinkage long dump_elf(struct task_struct* task,const char *path) {$/;"	f	language:C	typeref:typename:asmlinkage long	signature:(struct task_struct * task,const char * path)
+dump_elf	source/framework/task/sample/dump_elf1.c	/^void dump_elf(int pid, char* filename){$/;"	f	language:C	typeref:typename:void	signature:(int pid,char * filename)
+dump_elf_from_task_struct	source/framework/task/sample/dump_elf.c	/^int dump_elf_from_task_struct(pid_t pid, const char* outfile_path) {$/;"	f	language:C	typeref:typename:int	signature:(pid_t pid,const char * outfile_path)
+dump_segments_from_mm	source/framework/task/dump_segments.c	/^asmlinkage long dump_segments_from_mm(struct task_struct* task,const char *path,const char* segm/;"	f	language:C	typeref:typename:asmlinkage long	signature:(struct task_struct * task,const char * path,const char * segment_type)
+dump_segments_from_vma	source/framework/task/dump_segments.c	/^asmlinkage long dump_segments_from_vma(struct task_struct* task,const char *path,char* section_t/;"	f	language:C	typeref:typename:asmlinkage long	signature:(struct task_struct * task,const char * path,char * section_type)
+dump_segments_from_vmafile	source/framework/task/dump_segments.c	/^asmlinkage long dump_segments_from_vmafile(struct task_struct* task,const char *path,char* secti/;"	f	language:C	typeref:typename:asmlinkage long	signature:(struct task_struct * task,const char * path,char * section_type)
+dump_segments_from_vmas	source/framework/task/dump_segments.c	/^asmlinkage long dump_segments_from_vmas(struct task_struct* task,const char *path) {$/;"	f	language:C	typeref:typename:asmlinkage long	signature:(struct task_struct * task,const char * path)
+dump_task_exec_file_path	source/framework/task/dump_segments.c	/^char* dump_task_exec_file_path(struct task_struct* tsk)$/;"	f	language:C	typeref:typename:char *	signature:(struct task_struct * tsk)
+dump_task_struct_segments_exit	source/framework/task/dump_segments.c	/^static __exit void dump_task_struct_segments_exit(void)$/;"	f	language:C	typeref:typename:__exit void	file:	signature:(void)
+dump_task_struct_segments_init	source/framework/task/dump_segments.c	/^static __init int dump_task_struct_segments_init(void)$/;"	f	language:C	typeref:typename:__init int	file:	signature:(void)
 for_class_range	include/framework/task/task_ops.h	/^#define for_class_range(/;"	d	language:C++	signature:(class,_from,_to)
 for_each_class	include/framework/task/task_ops.h	/^#define for_each_class(/;"	d	language:C++	signature:(class)
 getRBTreeDepth	source/framework/model/rbtree_ops.c	/^static int getRBTreeDepth(struct rb_root* root)$/;"	f	language:C	typeref:typename:int	file:	signature:(struct rb_root * root)
@@ -48,6 +59,8 @@ is_kernel_progress	source/framework/task/task_ops.c	/^char* is_kernel_progress(s
 kernel_addr	source/framework/communication/samples/netlink_ops_test.c	/^struct sockaddr_nl  *kernel_addr = NULL;    \/\/ target address$/;"	v	language:C	typeref:struct:sockaddr_nl *
 key	source/framework/model/rbtree_ops.c	/^    int key;$/;"	m	language:C	struct:cache_node_info	typeref:typename:int	file:
 main	source/framework/communication/samples/netlink_ops_test.c	/^int main ()$/;"	f	language:C	typeref:typename:int	signature:()
+main	source/framework/task/sample/dump_elf.c	/^int main(int argc, char* argv[]) {$/;"	f	language:C	typeref:typename:int	signature:(int argc,char * argv[])
+main	source/framework/task/sample/dump_elf1.c	/^int main(int argc, char *argv[]){$/;"	f	language:C	typeref:typename:int	signature:(int argc,char * argv[])
 msg	source/framework/communication/samples/netlink_ops_test.c	/^struct test_nlmsg    *msg = NULL;            \/\/ message buffer$/;"	v	language:C	typeref:struct:test_nlmsg *
 msg_data	source/framework/communication/netlink_ops.c	/^    u8    msg_data[PAYLOAD_MAX_SIZE];$/;"	m	language:C	struct:test_nlmsg	typeref:typename:u8[]	file:
 msg_data	source/framework/communication/samples/netlink_ops_test.c	/^    uint8_t    msg_data[PAYLOAD_MAX_SIZE];$/;"	m	language:C	struct:test_nlmsg	typeref:typename:uint8_t[]	file:
